@@ -78,10 +78,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp GRAVE       &kp EXCL         &kp AT          &kp HASH      &kp DOLLAR      &kp PERCENT                                    &mmv MOVE_UP                     &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp LEFT_SHIFT  &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &kp PG_UP
-&kp LCTRL       &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans          &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp MINUS     &kp EQUAL      &trans        &trans                &trans                 &kp PG_DN
-                                                 &trans        &kp LEFT_SHIFT  &mt LGUI SPACE                                                                  &trans        &trans         &trans
+&kp GRAVE       &kp EXCL         &kp AT          &kp HASH      &kp DOLLAR    &kp PERCENT                                    &mmv MOVE_UP                     &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp LEFT_SHIFT  &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &kp PG_UP
+&kp LCTRL       &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp MINUS     &kp EQUAL      &trans        &trans                &trans                 &kp PG_DN
+                                                 &trans        &trans        &mt LGUI SPACE                                                                  &trans        &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
