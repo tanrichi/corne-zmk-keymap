@@ -28,23 +28,6 @@
 
 #define QUICK_TAP_MS 175
 
-ZMK_HOLD_TAP(hml,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <QUICK_TAP_MS>;
-    hold-trigger-key-positions = <KEYS_R THUMBS>;
-    hold-trigger-on-release;
-    bindings = <&kp>, <&kp>;
-)
-
-ZMK_HOLD_TAP(hmr,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <QUICK_TAP_MS>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-    hold-trigger-on-release;
-    bindings = <&kp>, <&kp>;
-)
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -64,6 +47,15 @@ ZMK_HOLD_TAP(hmr,
 
 / {
     behaviors {
+      hml: homerow_mods {
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <QUICK_TAP_MS>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+      };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -101,7 +93,7 @@ ZMK_HOLD_TAP(hmr,
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC             &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y      &kp U                &kp I      &kp O    &kp P     &kp BACKSLASH
+&kp ESC             &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y      &kp U                &kp I      &kp O    &kp P     &kp DEL
 &kp TAB             &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J                &kp K      &kp L    &kp SEMI  &kp SQT
 &kp RIGHT_BRACKET   &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M                &kp COMMA  &kp DOT  &kp FSLH  &none
                                  &kp ESC  &kp SPACE  &kp TAB                                               &kp ENTER  &mt RSHFT BACKSPACE  &mo 1
