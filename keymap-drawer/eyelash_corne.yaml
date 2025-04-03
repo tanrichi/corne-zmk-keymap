@@ -15,19 +15,19 @@ layers:
   - P
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
+  - '&hml LALT A'
+  - '&hml LGUI S'
+  - '&hml LCTRL D'
+  - '&hml LSHIFT F'
   - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - '&hmr RSHIFT J'
+  - '&hmr RCTRL K'
+  - '&hml RGUI L'
+  - '&hml RALT SEMI'
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
