@@ -101,10 +101,10 @@ ZMK_HOLD_TAP(hml,
     BASE {
       display-name = "Base";
       bindings = <
-        &kp ESC       &kp Q           &kp W           &kp E         &kp R           &kp T                &none          &kp Y     &kp U           &kp I      &kp O    &kp P     &kp DEL
-        &kp LSHIFT    &hml LALT A     &hml LGUI S     &hml LSHIFT D  &hml LCTRL F   &kp G          &none &none &none    &kp H     &hmr RCTRL J   &hmr RSHIFT K      &hml RGUI L    &hml RALT SEMI  &kp SQT
-        &kp LCTRL     &kp Z           &kp X           &kp C         &kp V           &kp B         &none  &none          &kp N     &kp M           &kp COMMA  &kp DOT  &kp FSLH  &none
-                                          &kp ESC   &kp SPACE &kp TAB                             &kp ENTER &lt NUM BACKSPACE   &lt SYM DEL
+        &kp ESC       &kp Q     &kp W           &kp E         &kp R           &kp T                &none          &kp Y     &kp U           &kp I       &kp O       &kp P     &kp DEL
+        &kp LSHIFT    &kp A     &hml LGUI S     &hml LALT D   &hml LCTRL F    &kp G          &none &none &none    &kp H     &hmr RCTRL J    &hmr RALT K &hmr RGUI L &kp SEMI  &kp SQT
+        &kp LCTRL     &kp Z     &kp X           &kp C         &kp V           &kp B         &none  &none          &kp N     &kp M           &kp COMMA   &kp DOT     &kp FSLH  &none
+                                                &kp ESC       &kp SPACE       &hml LSHIFT TAB                     &hmr RSHIFT SPACE &lt NUM BACKSPACE   &lt SYM DEL
       >;
     };
 
