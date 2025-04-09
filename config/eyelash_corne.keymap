@@ -28,27 +28,9 @@
 
 #define QUICK_TAP_MS 175
 
-ZMK_HOLD_TAP(hml,
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  require-prior-idle-ms = <QUICK_TAP_MS>;
-  hold-trigger-key-positions = <KEYS_R THUMBS>;
-  hold-trigger-on-release;
-  bindings = <&kp>, <&kp>;
-  )
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-  ZMK_HOLD_TAP(hmr,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <QUICK_TAP_MS>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-    hold-trigger-on-release;
-    bindings = <&kp>, <&kp>;
-    )
-
-    &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
-    &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
   acceleration-exponent = <1>;      // 0
@@ -69,6 +51,28 @@ ZMK_HOLD_TAP(hml,
       display-name = "Shift/Caps Lock Tap Dance";
       #binding-cells = <0>;
       bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+    };
+    hml: home_row_mod_left {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      require-prior-idle-ms = <QUICK_TAP_MS>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <QUICK_TAP_MS>;
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = < KEYS_R THUMBS >; // List of keys on the right side of the keyboard
+      hold-trigger-on-release;
+    };
+    hmr: home_row_mod_right {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      require-prior-idle-ms = <QUICK_TAP_MS>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <QUICK_TAP_MS>;
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the right side of the keyboard
+      hold-trigger-on-release;
     };
   };
 
