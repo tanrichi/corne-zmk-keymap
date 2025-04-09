@@ -104,7 +104,7 @@ ZMK_HOLD_TAP(hml,
         &none   &kp Q       &kp W       &kp E         &kp R             &kp T                &none          &kp Y     &kp U           &kp I         &kp O       &kp P           &none
         &none   &hml LALT A &hml LGUI S &hml LSHIFT D &hml LCTRL F      &kp G          &none &none &none    &kp H     &hmr RCTRL J    &hmr RSHIFT K &hmr RGUI L &hmr LALT SEMI  &kp SQT
         &none   &kp Z       &kp X       &kp C         &kp V             &kp B         &none  &none          &kp N     &kp M           &kp COMMA     &kp DOT     &kp FSLH        &none
-                                        &lt NAV ESC   &hml LSHIFT SPACE &kp TAB                      &lt SYM SPACE &lt NUM BSPC  &kp DEL
+                                        &lt NAV ESC   &hml LSHIFT SPACE &kp TAB                         &lt SYM SPACE &lt NUM BSPC  &lt NAV DEL
       >;
     };
 
@@ -131,9 +131,9 @@ ZMK_HOLD_TAP(hml,
     NAV {
       display-name = "Navigation";
       bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans    &trans    &trans        &trans     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans    &trans    &trans        &trans     &trans  &trans
+        &trans     &LG(N1)   &LG(N2)  &LG(N3) &LG(N4) &LG(N5)                &trans          &trans    &trans    &trans        &trans     &trans  &trans
+        &sk LCTRL  &LC(N1)   &LC(N2)  &LC(N3) &LC(N4) &LC(N5)        &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+        &sk LSHIFT &LA(N1)   &LA(N2)  &LA(N3) &LA(N4) &LA(N5)  &trans        &trans          &trans    &trans    &trans        &trans     &trans  &trans
                                 &trans  &trans  &trans                                    &trans    &trans    &trans
       >;
     };
