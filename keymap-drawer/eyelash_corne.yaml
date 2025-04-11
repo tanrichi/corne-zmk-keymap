@@ -15,19 +15,19 @@ layers:
   - P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&hml LALT A'
+  - A
   - '&hml LGUI S'
   - '&hml LSHIFT D'
   - '&hml LCTRL F'
-  - G
+  - '&hml LALT G'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - H
+  - '&hmr RALT H'
   - '&hmr RCTRL J'
   - '&hmr RSHIFT K'
   - '&hmr RGUI L'
-  - '&hmr LALT SEMI'
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: Navigation}
   - '&hml LSHIFT SPACE'
   - {t: '$$mdi:keyboard-tab$$', h: Navigation}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
@@ -149,11 +149,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Navigation:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Gui+4, s: Gui+$}
-  - {t: Gui+3, s: Gui+#}
-  - {t: Gui+2, s: Gui+@}
   - {t: Gui+1, s: Gui+!}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+2, s: Gui+@}
+  - {t: Gui+3, s: Gui+#}
+  - {t: Gui+4, s: Gui+$}
+  - {t: Gui+5, s: Gui+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -162,11 +162,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: Ctl+4, s: Ctl+$}
-  - {t: Ctl+3, s: Ctl+#}
-  - {t: Ctl+2, s: Ctl+@}
   - {t: Ctl+1, s: Ctl+!}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+2, s: Ctl+@}
+  - {t: Ctl+3, s: Ctl+#}
+  - {t: Ctl+4, s: Ctl+$}
+  - {t: Ctl+5, s: Ctl+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,13 +177,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: Alt+4, s: Alt+$}
-  - {t: Alt+3, s: Alt+#}
-  - {t: Alt+2, s: Alt+@}
   - {t: Alt+1, s: Alt+!}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Alt+2, s: Alt+@}
+  - {t: Alt+3, s: Alt+#}
+  - {t: Alt+4, s: Alt+$}
+  - {t: Alt+5, s: Alt+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -193,6 +191,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
