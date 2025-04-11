@@ -13,7 +13,6 @@
 
 #include "zmk-helpers/helper.h"
 #include "eyelash_corne/keymap.h"
-// #include "zmk-helpers/key-labels/eyelash42.h"
 #include "zmk-helpers/unicode-chars/french.dtsi"
 
 #define BASE 0
@@ -37,18 +36,18 @@ ZMK_HOLD_TAP(hml,
   bindings = <&kp>, <&kp>;
   )
 
-  ZMK_HOLD_TAP(hmr,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <QUICK_TAP_MS>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-    hold-trigger-on-release;
-    bindings = <&kp>, <&kp>;
-    )
+ZMK_HOLD_TAP(hmr,
+  flavor = "balanced";
+  tapping-term-ms = <200>;
+  require-prior-idle-ms = <QUICK_TAP_MS>;
+  hold-trigger-key-positions = <KEYS_L THUMBS>;
+  hold-trigger-on-release;
+  bindings = <&kp>, <&kp>;
+  )
 
-    &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-    &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
   acceleration-exponent = <1>;      // 0
@@ -101,10 +100,10 @@ ZMK_HOLD_TAP(hml,
     BASE {
       display-name = "Base";
       bindings = <
-        &none   &kp Q       &kp W       &kp E         &kp R             &kp T                &none          &kp Y         &kp U           &kp I         &kp O       &kp P           &none
-        &none   &hml LALT A &hml LGUI S &hml LSHIFT D &hml LCTRL F      &kp G          &none &none &none    &kp H         &hmr RCTRL J    &hmr RSHIFT K &hmr RGUI L &hmr LALT SEMI  &kp SQT
-        &none   &kp Z       &kp X       &kp C         &kp V             &kp B         &none  &none          &kp N         &kp M           &kp COMMA     &kp DOT     &kp FSLH        &none
-                                        &lt NAV ESC   &hml LSHIFT SPACE &lt NAV TAB                         &lt SYM SPACE &lt NUM BSPC    &lt NAV DEL
+        &none   &kp Q   &kp W       &kp E         &kp R             &kp T                &none          &kp Y         &kp U           &kp I         &kp O       &kp P      &none
+        &none   &kp A   &hml LGUI S &hml LSHIFT D &hml LCTRL F      &hml LALT G    &none &none &none    &hmr RALT H   &hmr RCTRL J    &hmr RSHIFT K &hmr RGUI L &kp SEMI   &kp SQT
+        &none   &kp Z   &kp X       &kp C         &kp V             &kp B         &none  &none          &kp N         &kp M           &kp COMMA     &kp DOT     &kp FSLH   &none
+                                    &lt NAV ESC   &hml LSHIFT SPACE &lt NAV TAB                         &lt SYM SPACE &lt NUM BSPC    &lt NAV DEL
       >;
     };
 
