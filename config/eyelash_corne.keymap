@@ -136,6 +136,5 @@ ZMK_HOLD_TAP(hmr,
                                           &trans      &trans      &trans                              &trans    &trans    &trans
       >;
     };
-
   };
 };
