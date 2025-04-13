@@ -1,0 +1,9 @@
+    TEMP {
+      display-name = "Example Layout"
+      bindings = <
+        &trans    &trans    &trans    &trans    &trans    &trans          &trans          &trans    &trans    &trans    &trans    &trans    &trans
+        &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
+        &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans          &trans    &trans    &trans    &trans    &trans    &trans
+                                      &trans    &trans    &trans                          &trans    &trans    &trans  
+      >;
+    };
