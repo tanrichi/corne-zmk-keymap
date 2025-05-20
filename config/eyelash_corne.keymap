@@ -61,6 +61,11 @@ ZMK_HOLD_TAP(hmr,
   trigger-period-ms = <16>;
 };
 
+&lt {
+  tapping-term-ms = <200>;
+  flavor = "balanced";
+};
+
 / {
   behaviors {
     td0: td0 {
@@ -70,9 +75,6 @@ ZMK_HOLD_TAP(hmr,
       bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
     };
 
-    &lt {
-      flavor = "balanced";
-    };
   };
 
   rgb_encoder: rgb_encoder {
