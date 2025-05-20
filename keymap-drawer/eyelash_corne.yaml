@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   Base:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F1
   - Q
   - W
   - E
@@ -13,10 +13,10 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - A
-  - S
+  - F10
+  - F2
+  - '&hml LALT A'
+  - '&hml LGUI S'
   - '&hml LSHIFT D'
   - '&hml LCTRL F'
   - G
@@ -29,7 +29,7 @@ layers:
   - '&hmr LGUI L'
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-option$$
+  - F3
   - Z
   - X
   - C
