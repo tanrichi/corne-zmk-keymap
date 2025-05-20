@@ -95,6 +95,7 @@ ZMK_HOLD_TAP(hmr,
     compatible = "zmk,combos";
 
     enter {
+      require-prior-idle-ms = <75>;
       bindings = <&kp RET>;
       key-positions = <RM2 RM3>;
     };
